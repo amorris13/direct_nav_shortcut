@@ -1,0 +1,18 @@
+com.antsapps.directnavshortcut.BuildConfig
+com.antsapps.directnavshortcut.CreateShortcutActivity:
+    private static final int REQUEST_ADDRESS
+com.antsapps.directnavshortcut.R
+com.antsapps.directnavshortcut.R$attr
+com.antsapps.directnavshortcut.R$color
+com.antsapps.directnavshortcut.R$dimen
+com.antsapps.directnavshortcut.R$drawable
+com.antsapps.directnavshortcut.R$string
+com.antsapps.directnavshortcut.ShortcutIntentBuilder:
+    private static final java.lang.String SCHEME_NAV
+    private static final int ADDRESS_DISPLAY_NAME_COLUMN_INDEX
+    private static final int ADDRESS_PHOTO_ID_COLUMN_INDEX
+    private static final int ADDRESS_NUMBER_COLUMN_INDEX
+    private static final int ADDRESS_TYPE_COLUMN_INDEX
+    private static final int ADDRESS_LABEL_COLUMN_INDEX
+    private static final int PHOTO_PHOTO_COLUMN_INDEX
+    private static final java.lang.String PHOTO_SELECTION

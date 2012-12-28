@@ -1,0 +1,1516 @@
+_____________________________________________________________________
++ Program class: com/antsapps/directnavshortcut/CreateShortcutActivity
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.antsapps.directnavshortcut.CreateShortcutActivity extends android.app.Activity
+
+Interfaces (count = 1):
+  + Class [com/antsapps/directnavshortcut/c]
+
+Constant Pool (count = 57):
+  + String [android.intent.action.PICK]
+  + String [vnd.android.cursor.dir/postal-address_v2]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [com/antsapps/directnavshortcut/CreateShortcutActivity]
+  + Class [com/antsapps/directnavshortcut/a]
+  + Class [com/antsapps/directnavshortcut/c]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+  + Methodref [android/content/Intent.getData ()Landroid/net/Uri;]
+  + Methodref [android/content/Intent.setType (Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [com/antsapps/directnavshortcut/CreateShortcutActivity.finish ()V]
+  + Methodref [com/antsapps/directnavshortcut/CreateShortcutActivity.setResult (ILandroid/content/Intent;)V]
+  + Methodref [com/antsapps/directnavshortcut/CreateShortcutActivity.startActivityForResult (Landroid/content/Intent;I)V]
+  + Methodref [com/antsapps/directnavshortcut/a.<init> (Landroid/content/Context;Lcom/antsapps/directnavshortcut/c;)V]
+  + Methodref [com/antsapps/directnavshortcut/a.a (Landroid/net/Uri;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Lcom/antsapps/directnavshortcut/c;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a (Landroid/net/Uri;)V]
+  + NameAndType [finish ()V]
+  + NameAndType [getData ()Landroid/net/Uri;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [setResult (ILandroid/content/Intent;)V]
+  + NameAndType [setType (Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [startActivityForResult (Landroid/content/Intent;I)V]
+  + Utf8 [()Landroid/net/Uri;]
+  + Utf8 [()V]
+  + Utf8 [(IILandroid/content/Intent;)V]
+  + Utf8 [(ILandroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Context;Lcom/antsapps/directnavshortcut/c;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Intent;I)V]
+  + Utf8 [(Landroid/net/Uri;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android.intent.action.PICK]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [com/antsapps/directnavshortcut/CreateShortcutActivity]
+  + Utf8 [com/antsapps/directnavshortcut/a]
+  + Utf8 [com/antsapps/directnavshortcut/c]
+  + Utf8 [finish]
+  + Utf8 [getData]
+  + Utf8 [onActivityResult]
+  + Utf8 [onCreate]
+  + Utf8 [setResult]
+  + Utf8 [setType]
+  + Utf8 [startActivityForResult]
+  + Utf8 [vnd.android.cursor.dir/postal-address_v2]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public CreateShortcutActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #8
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 30, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #9
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] new #4
+        + Class [android/content/Intent]
+      [8] dup
+      [9] ldc #1
+        + String [android.intent.action.PICK]
+      [11] invokespecial #10
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [14] dup
+      [15] astore_1 v1
+      [16] ldc #2
+        + String [vnd.android.cursor.dir/postal-address_v2]
+      [18] invokevirtual #12
+        + Methodref [android/content/Intent.setType (Ljava/lang/String;)Landroid/content/Intent;]
+      [21] pop
+      [22] aload_0 v0
+      [23] aload_1 v1
+      [24] bipush 23
+      [26] invokevirtual #15
+        + Methodref [com/antsapps/directnavshortcut/CreateShortcutActivity.startActivityForResult (Landroid/content/Intent;I)V]
+      [29] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onActivityResult(IILandroid/content/Intent;)V
+    Access flags: 0x4
+      = protected void onActivityResult(int,int,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 30, locals = 4, stack = 4):
+      [0] iload_1 v1
+      [1] bipush 23
+      [3] ificmpne +26 (target=29)
+      [6] iload_2 v2
+      [7] iconst_m1
+      [8] ificmpne +21 (target=29)
+      [11] aload_3 v3
+      [12] invokevirtual #11
+        + Methodref [android/content/Intent.getData ()Landroid/net/Uri;]
+      [15] astore_1 v1
+      [16] new #6
+        + Class [com/antsapps/directnavshortcut/a]
+      [19] dup
+      [20] aload_0 v0
+      [21] aload_0 v0
+      [22] invokespecial #16
+        + Methodref [com/antsapps/directnavshortcut/a.<init> (Landroid/content/Context;Lcom/antsapps/directnavshortcut/c;)V]
+      [25] aload_1 v1
+      [26] invokevirtual #17
+        + Methodref [com/antsapps/directnavshortcut/a.a (Landroid/net/Uri;)V]
+      [29] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [29] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/content/Intent;)V
+    Access flags: 0x11
+      = public final void a(android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 11, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] iconst_m1
+      [2] aload_1 v1
+      [3] invokevirtual #14
+        + Methodref [com/antsapps/directnavshortcut/CreateShortcutActivity.setResult (ILandroid/content/Intent;)V]
+      [6] aload_0 v0
+      [7] invokevirtual #13
+        + Methodref [com/antsapps/directnavshortcut/CreateShortcutActivity.finish ()V]
+      [10] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/antsapps/directnavshortcut/a
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.antsapps.directnavshortcut.a extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 311):
+  + Integer [67108864]
+  + Integer [2130837504]
+  + Integer [2130837506]
+  + Integer [2130903040]
+  + Integer [2130903041]
+  + Integer [2130903042]
+  + Integer [2130968576]
+  + Integer [2130968577]
+  + Integer [2130968578]
+  + Integer [2130968579]
+  + Float [4.0]
+  + Float [19.0]
+  + Float [20.0]
+  + String [android.intent.action.VIEW]
+  + String [android.intent.extra.shortcut.ICON]
+  + String [android.intent.extra.shortcut.INTENT]
+  + String [android.intent.extra.shortcut.NAME]
+  + String [data1]
+  + String [data15]
+  + String [data2]
+  + String [data3]
+  + String [display_name]
+  + String [google.navigation:q=]
+  + String [photo_id]
+  + Class [android/content/Context]
+  + Class [android/content/Intent]
+  + Class [android/content/res/Resources]
+  + Class [android/graphics/Bitmap]
+  + Class [android/graphics/Bitmap$Config]
+  + Class [android/graphics/BitmapFactory]
+  + Class [android/graphics/Canvas]
+  + Class [android/graphics/Paint]
+  + Class [android/graphics/Paint$FontMetricsInt]
+  + Class [android/graphics/Paint$Style]
+  + Class [android/graphics/Rect]
+  + Class [android/graphics/drawable/BitmapDrawable]
+  + Class [android/net/Uri]
+  + Class [android/provider/ContactsContract$CommonDataKinds$StructuredPostal]
+  + Class [android/text/TextPaint]
+  + Class [android/text/TextUtils]
+  + Class [android/text/TextUtils$TruncateAt]
+  + Class [android/util/DisplayMetrics]
+  + Class [com/antsapps/directnavshortcut/a]
+  + Class [com/antsapps/directnavshortcut/b]
+  + Class [com/antsapps/directnavshortcut/c]
+  + Class [java/lang/CharSequence]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [java/lang/Void]
+  + Fieldref [android/graphics/Bitmap$Config.ARGB_8888 Landroid/graphics/Bitmap$Config;]
+  + Fieldref [android/graphics/Paint$FontMetricsInt.ascent I]
+  + Fieldref [android/graphics/Paint$FontMetricsInt.descent I]
+  + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+  + Fieldref [android/graphics/Paint$Style.STROKE Landroid/graphics/Paint$Style;]
+  + Fieldref [android/text/TextUtils$TruncateAt.END Landroid/text/TextUtils$TruncateAt;]
+  + Fieldref [android/util/DisplayMetrics.density F]
+  + Fieldref [com/antsapps/directnavshortcut/a.a [Ljava/lang/String;]
+  + Fieldref [com/antsapps/directnavshortcut/a.b [Ljava/lang/String;]
+  + Fieldref [com/antsapps/directnavshortcut/a.c Lcom/antsapps/directnavshortcut/c;]
+  + Fieldref [com/antsapps/directnavshortcut/a.d Landroid/content/Context;]
+  + Fieldref [com/antsapps/directnavshortcut/a.e I]
+  + Fieldref [com/antsapps/directnavshortcut/a.f I]
+  + Fieldref [com/antsapps/directnavshortcut/a.g I]
+  + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setFlags (I)Landroid/content/Intent;]
+  + Methodref [android/content/res/Resources.getColor (I)I]
+  + Methodref [android/content/res/Resources.getDimension (I)F]
+  + Methodref [android/content/res/Resources.getDimensionPixelOffset (I)I]
+  + Methodref [android/content/res/Resources.getDimensionPixelSize (I)I]
+  + Methodref [android/content/res/Resources.getDisplayMetrics ()Landroid/util/DisplayMetrics;]
+  + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+  + Methodref [android/graphics/Bitmap.createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+  + Methodref [android/graphics/Bitmap.getHeight ()I]
+  + Methodref [android/graphics/Bitmap.getWidth ()I]
+  + Methodref [android/graphics/BitmapFactory.decodeByteArray ([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Methodref [android/graphics/Canvas.<init> (Landroid/graphics/Bitmap;)V]
+  + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.drawText (Ljava/lang/CharSequence;IIFFLandroid/graphics/Paint;)V]
+  + Methodref [android/graphics/Canvas.setBitmap (Landroid/graphics/Bitmap;)V]
+  + Methodref [android/graphics/Paint.<init> ()V]
+  + Methodref [android/graphics/Paint.setColor (I)V]
+  + Methodref [android/graphics/Paint.setDither (Z)V]
+  + Methodref [android/graphics/Paint.setFilterBitmap (Z)V]
+  + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+  + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+  + Methodref [android/graphics/Rect.<init> (IIII)V]
+  + Methodref [android/graphics/Rect.offset (II)V]
+  + Methodref [android/graphics/Rect.set (IIII)V]
+  + Methodref [android/graphics/drawable/BitmapDrawable.getBitmap ()Landroid/graphics/Bitmap;]
+  + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + Methodref [android/provider/ContactsContract$CommonDataKinds$StructuredPostal.getTypeLabel (Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;]
+  + Methodref [android/text/TextPaint.<init> (I)V]
+  + Methodref [android/text/TextPaint.getFontMetricsInt ()Landroid/graphics/Paint$FontMetricsInt;]
+  + Methodref [android/text/TextPaint.measureText (Ljava/lang/CharSequence;II)F]
+  + Methodref [android/text/TextPaint.setColor (I)V]
+  + Methodref [android/text/TextPaint.setShadowLayer (FFFI)V]
+  + Methodref [android/text/TextPaint.setTextSize (F)V]
+  + Methodref [android/text/TextUtils.ellipsize (Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;]
+  + Methodref [com/antsapps/directnavshortcut/b.<init> (Lcom/antsapps/directnavshortcut/a;Landroid/net/Uri;)V]
+  + Methodref [com/antsapps/directnavshortcut/b.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + InterfaceMethodref [com/antsapps/directnavshortcut/c.a (Landroid/content/Intent;)V]
+  + InterfaceMethodref [java/lang/CharSequence.length ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (I)V]
+  + NameAndType [<init> (IIII)V]
+  + NameAndType [<init> (Landroid/graphics/Bitmap;)V]
+  + NameAndType [<init> (Lcom/antsapps/directnavshortcut/a;Landroid/net/Uri;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + NameAndType [ARGB_8888 Landroid/graphics/Bitmap$Config;]
+  + NameAndType [END Landroid/text/TextUtils$TruncateAt;]
+  + NameAndType [FILL Landroid/graphics/Paint$Style;]
+  + NameAndType [STROKE Landroid/graphics/Paint$Style;]
+  + NameAndType [a (Landroid/content/Intent;)V]
+  + NameAndType [a [Ljava/lang/String;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [ascent I]
+  + NameAndType [b [Ljava/lang/String;]
+  + NameAndType [c Lcom/antsapps/directnavshortcut/c;]
+  + NameAndType [createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+  + NameAndType [d Landroid/content/Context;]
+  + NameAndType [decodeByteArray ([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + NameAndType [density F]
+  + NameAndType [descent I]
+  + NameAndType [drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + NameAndType [drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + NameAndType [drawText (Ljava/lang/CharSequence;IIFFLandroid/graphics/Paint;)V]
+  + NameAndType [e I]
+  + NameAndType [ellipsize (Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;]
+  + NameAndType [execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + NameAndType [f I]
+  + NameAndType [g I]
+  + NameAndType [getBitmap ()Landroid/graphics/Bitmap;]
+  + NameAndType [getColor (I)I]
+  + NameAndType [getDimension (I)F]
+  + NameAndType [getDimensionPixelOffset (I)I]
+  + NameAndType [getDimensionPixelSize (I)I]
+  + NameAndType [getDisplayMetrics ()Landroid/util/DisplayMetrics;]
+  + NameAndType [getDrawable (I)Landroid/graphics/drawable/Drawable;]
+  + NameAndType [getFontMetricsInt ()Landroid/graphics/Paint$FontMetricsInt;]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getTypeLabel (Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [length ()I]
+  + NameAndType [measureText (Ljava/lang/CharSequence;II)F]
+  + NameAndType [offset (II)V]
+  + NameAndType [parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [set (IIII)V]
+  + NameAndType [setBitmap (Landroid/graphics/Bitmap;)V]
+  + NameAndType [setColor (I)V]
+  + NameAndType [setDither (Z)V]
+  + NameAndType [setFilterBitmap (Z)V]
+  + NameAndType [setFlags (I)Landroid/content/Intent;]
+  + NameAndType [setShadowLayer (FFFI)V]
+  + NameAndType [setStrokeWidth (F)V]
+  + NameAndType [setStyle (Landroid/graphics/Paint$Style;)V]
+  + NameAndType [setTextSize (F)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Landroid/graphics/Bitmap;]
+  + Utf8 [()Landroid/graphics/Paint$FontMetricsInt;]
+  + Utf8 [()Landroid/util/DisplayMetrics;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()[Ljava/lang/String;]
+  + Utf8 [(F)V]
+  + Utf8 [(FFFI)V]
+  + Utf8 [(I)F]
+  + Utf8 [(I)I]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(I)Landroid/graphics/drawable/Drawable;]
+  + Utf8 [(I)V]
+  + Utf8 [(II)V]
+  + Utf8 [(IIII)V]
+  + Utf8 [(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/content/Context;Lcom/antsapps/directnavshortcut/c;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;]
+  + Utf8 [(Landroid/graphics/Bitmap;)V]
+  + Utf8 [(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Utf8 [(Landroid/graphics/Paint$Style;)V]
+  + Utf8 [(Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Utf8 [(Landroid/net/Uri;)V]
+  + Utf8 [(Lcom/antsapps/directnavshortcut/a;)Landroid/content/Context;]
+  + Utf8 [(Lcom/antsapps/directnavshortcut/a;Landroid/net/Uri;)V]
+  + Utf8 [(Lcom/antsapps/directnavshortcut/a;Ljava/lang/String;[BLjava/lang/String;ILjava/lang/String;)V]
+  + Utf8 [(Ljava/lang/CharSequence;II)F]
+  + Utf8 [(Ljava/lang/CharSequence;IIFFLandroid/graphics/Paint;)V]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/net/Uri;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Z)V]
+  + Utf8 [([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+  + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Utf8 [<clinit>]
+  + Utf8 [<init>]
+  + Utf8 [ARGB_8888]
+  + Utf8 [Code]
+  + Utf8 [END]
+  + Utf8 [F]
+  + Utf8 [FILL]
+  + Utf8 [I]
+  + Utf8 [Landroid/content/Context;]
+  + Utf8 [Landroid/graphics/Bitmap$Config;]
+  + Utf8 [Landroid/graphics/Paint$Style;]
+  + Utf8 [Landroid/text/TextUtils$TruncateAt;]
+  + Utf8 [Lcom/antsapps/directnavshortcut/c;]
+  + Utf8 [STROKE]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [android.intent.action.VIEW]
+  + Utf8 [android.intent.extra.shortcut.ICON]
+  + Utf8 [android.intent.extra.shortcut.INTENT]
+  + Utf8 [android.intent.extra.shortcut.NAME]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/content/res/Resources]
+  + Utf8 [android/graphics/Bitmap]
+  + Utf8 [android/graphics/Bitmap$Config]
+  + Utf8 [android/graphics/BitmapFactory]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/graphics/Paint]
+  + Utf8 [android/graphics/Paint$FontMetricsInt]
+  + Utf8 [android/graphics/Paint$Style]
+  + Utf8 [android/graphics/Rect]
+  + Utf8 [android/graphics/drawable/BitmapDrawable]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/provider/ContactsContract$CommonDataKinds$StructuredPostal]
+  + Utf8 [android/text/TextPaint]
+  + Utf8 [android/text/TextUtils]
+  + Utf8 [android/text/TextUtils$TruncateAt]
+  + Utf8 [android/util/DisplayMetrics]
+  + Utf8 [append]
+  + Utf8 [ascent]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/antsapps/directnavshortcut/a]
+  + Utf8 [com/antsapps/directnavshortcut/b]
+  + Utf8 [com/antsapps/directnavshortcut/c]
+  + Utf8 [createBitmap]
+  + Utf8 [d]
+  + Utf8 [data1]
+  + Utf8 [data15]
+  + Utf8 [data2]
+  + Utf8 [data3]
+  + Utf8 [decodeByteArray]
+  + Utf8 [density]
+  + Utf8 [descent]
+  + Utf8 [display_name]
+  + Utf8 [drawBitmap]
+  + Utf8 [drawRect]
+  + Utf8 [drawText]
+  + Utf8 [e]
+  + Utf8 [ellipsize]
+  + Utf8 [execute]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [getBitmap]
+  + Utf8 [getColor]
+  + Utf8 [getDimension]
+  + Utf8 [getDimensionPixelOffset]
+  + Utf8 [getDimensionPixelSize]
+  + Utf8 [getDisplayMetrics]
+  + Utf8 [getDrawable]
+  + Utf8 [getFontMetricsInt]
+  + Utf8 [getHeight]
+  + Utf8 [getResources]
+  + Utf8 [getTypeLabel]
+  + Utf8 [getWidth]
+  + Utf8 [google.navigation:q=]
+  + Utf8 [java/lang/CharSequence]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/lang/Void]
+  + Utf8 [length]
+  + Utf8 [measureText]
+  + Utf8 [offset]
+  + Utf8 [parse]
+  + Utf8 [photo_id]
+  + Utf8 [putExtra]
+  + Utf8 [set]
+  + Utf8 [setBitmap]
+  + Utf8 [setColor]
+  + Utf8 [setDither]
+  + Utf8 [setFilterBitmap]
+  + Utf8 [setFlags]
+  + Utf8 [setShadowLayer]
+  + Utf8 [setStrokeWidth]
+  + Utf8 [setStyle]
+  + Utf8 [setTextSize]
+  + Utf8 [toString]
+
+Fields (count = 7):
+  + Field:        a [Ljava/lang/String;
+    Access flags: 0x1a
+      = private static final java.lang.String[] a
+  + Field:        b [Ljava/lang/String;
+    Access flags: 0x1a
+      = private static final java.lang.String[] b
+  + Field:        c Lcom/antsapps/directnavshortcut/c;
+    Access flags: 0x12
+      = private final com.antsapps.directnavshortcut.c c
+  + Field:        d Landroid/content/Context;
+    Access flags: 0x12
+      = private final android.content.Context d
+  + Field:        e I
+    Access flags: 0x12
+      = private final int e
+  + Field:        f I
+    Access flags: 0x12
+      = private final int f
+  + Field:        g I
+    Access flags: 0x12
+      = private final int g
+
+Methods (count = 7):
+  - Method:       <clinit>()V
+    Access flags: 0x8
+      = static void <clinit>()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 45, locals = 0, stack = 4):
+      [0] iconst_5
+      [1] anewarray #48
+        + Class [java/lang/String]
+      [4] dup
+      [5] iconst_0
+      [6] ldc #22
+        + String [display_name]
+      [8] aastore
+      [9] dup
+      [10] iconst_1
+      [11] ldc #24
+        + String [photo_id]
+      [13] aastore
+      [14] dup
+      [15] iconst_2
+      [16] ldc #18
+        + String [data1]
+      [18] aastore
+      [19] dup
+      [20] iconst_3
+      [21] ldc #20
+        + String [data2]
+      [23] aastore
+      [24] dup
+      [25] iconst_4
+      [26] ldc #21
+        + String [data3]
+      [28] aastore
+      [29] putstatic #58
+        + Fieldref [com/antsapps/directnavshortcut/a.a [Ljava/lang/String;]
+      [32] iconst_1
+      [33] anewarray #48
+        + Class [java/lang/String]
+      [36] dup
+      [37] iconst_0
+      [38] ldc #19
+        + String [data15]
+      [40] aastore
+      [41] putstatic #59
+        + Fieldref [com/antsapps/directnavshortcut/a.b [Ljava/lang/String;]
+      [44] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <init>(Landroid/content/Context;Lcom/antsapps/directnavshortcut/c;)V
+    Access flags: 0x1
+      = public a(android.content.Context,com.antsapps.directnavshortcut.c)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 50, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] invokespecial #107
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] aload_1 v1
+      [6] putfield #61
+        + Fieldref [com/antsapps/directnavshortcut/a.d Landroid/content/Context;]
+      [9] aload_0 v0
+      [10] aload_2 v2
+      [11] putfield #60
+        + Fieldref [com/antsapps/directnavshortcut/a.c Lcom/antsapps/directnavshortcut/c;]
+      [14] aload_1 v1
+      [15] invokevirtual #65
+        + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+      [18] astore_1 v1
+      [19] aload_0 v0
+      [20] aload_1 v1
+      [21] ldc #7
+        + Integer [2130968576]
+      [23] invokevirtual #74
+        + Methodref [android/content/res/Resources.getDimensionPixelSize (I)I]
+      [26] putfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [29] aload_0 v0
+      [30] aload_1 v1
+      [31] ldc #8
+        + Integer [2130968577]
+      [33] invokevirtual #73
+        + Methodref [android/content/res/Resources.getDimensionPixelOffset (I)I]
+      [36] putfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [39] aload_0 v0
+      [40] aload_1 v1
+      [41] ldc #6
+        + Integer [2130903042]
+      [43] invokevirtual #71
+        + Methodref [android/content/res/Resources.getColor (I)I]
+      [46] putfield #64
+        + Fieldref [com/antsapps/directnavshortcut/a.g I]
+      [49] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/net/Uri;)V
+    Access flags: 0x11
+      = public final void a(android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 2, stack = 4):
+      [0] new #44
+        + Class [com/antsapps/directnavshortcut/b]
+      [3] dup
+      [4] aload_0 v0
+      [5] aload_1 v1
+      [6] invokespecial #105
+        + Methodref [com/antsapps/directnavshortcut/b.<init> (Lcom/antsapps/directnavshortcut/a;Landroid/net/Uri;)V]
+      [9] iconst_0
+      [10] anewarray #50
+        + Class [java/lang/Void]
+      [13] invokevirtual #106
+        + Methodref [com/antsapps/directnavshortcut/b.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [16] pop
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/antsapps/directnavshortcut/a;)Landroid/content/Context;
+    Access flags: 0x1008
+      = static synthetic android.content.Context a(com.antsapps.directnavshortcut.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #61
+        + Fieldref [com/antsapps/directnavshortcut/a.d Landroid/content/Context;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()[Ljava/lang/String;
+    Access flags: 0x1008
+      = static synthetic java.lang.String[] a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 4, locals = 0, stack = 1):
+      [0] getstatic #58
+        + Fieldref [com/antsapps/directnavshortcut/a.a [Ljava/lang/String;]
+      [3] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()[Ljava/lang/String;
+    Access flags: 0x1008
+      = static synthetic java.lang.String[] b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 4, locals = 0, stack = 1):
+      [0] getstatic #59
+        + Fieldref [com/antsapps/directnavshortcut/a.b [Ljava/lang/String;]
+      [3] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/antsapps/directnavshortcut/a;Ljava/lang/String;[BLjava/lang/String;ILjava/lang/String;)V
+    Access flags: 0x1008
+      = static synthetic void a(com.antsapps.directnavshortcut.a,java.lang.String,byte[],java.lang.String,int,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 681, locals = 18, stack = 7):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] aload_3 v3
+      [4] iload v4
+      [6] aload v5
+      [8] astore v4
+      [10] istore_3 v3
+      [11] astore_2 v2
+      [12] astore_1 v1
+      [13] astore v6
+      [15] dup
+      [16] astore_0 v0
+      [17] aload_1 v1
+      [18] astore v5
+      [20] astore_1 v1
+      [21] aload v5
+      [23] ifnull +18 (target=41)
+      [26] aload v5
+      [28] iconst_0
+      [29] aload v5
+      [31] arraylength
+      [32] aconst_null
+      [33] invokestatic #80
+        + Methodref [android/graphics/BitmapFactory.decodeByteArray ([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
+      [36] astore v7
+      [38] goto +23 (target=61)
+      [41] aload_1 v1
+      [42] getfield #61
+        + Fieldref [com/antsapps/directnavshortcut/a.d Landroid/content/Context;]
+      [45] invokevirtual #65
+        + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+      [48] ldc #2
+        + Integer [2130837504]
+      [50] invokevirtual #76
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [53] checkcast #36
+        + Class [android/graphics/drawable/BitmapDrawable]
+      [56] invokevirtual #95
+        + Methodref [android/graphics/drawable/BitmapDrawable.getBitmap ()Landroid/graphics/Bitmap;]
+      [59] astore v7
+      [61] aload v7
+      [63] astore_1 v1
+      [64] new #49
+        + Class [java/lang/StringBuilder]
+      [67] dup
+      [68] ldc #23
+        + String [google.navigation:q=]
+      [70] invokespecial #108
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [73] aload_2 v2
+      [74] invokevirtual #109
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [77] invokevirtual #110
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [80] invokestatic #96
+        + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+      [83] astore_2 v2
+      [84] aload_0 v0
+      [85] aload_1 v1
+      [86] iload_3 v3
+      [87] aload v4
+      [89] astore_3 v3
+      [90] istore v7
+      [92] astore v5
+      [94] dup
+      [95] astore_1 v1
+      [96] getfield #61
+        + Fieldref [com/antsapps/directnavshortcut/a.d Landroid/content/Context;]
+      [99] invokevirtual #65
+        + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
+      [102] dup
+      [103] astore v4
+      [105] invokevirtual #75
+        + Methodref [android/content/res/Resources.getDisplayMetrics ()Landroid/util/DisplayMetrics;]
+      [108] getfield #57
+        + Fieldref [android/util/DisplayMetrics.density F]
+      [111] fstore v8
+      [113] aload v4
+      [115] ldc #3
+        + Integer [2130837506]
+      [117] invokevirtual #76
+        + Methodref [android/content/res/Resources.getDrawable (I)Landroid/graphics/drawable/Drawable;]
+      [120] checkcast #36
+        + Class [android/graphics/drawable/BitmapDrawable]
+      [123] invokevirtual #95
+        + Methodref [android/graphics/drawable/BitmapDrawable.getBitmap ()Landroid/graphics/Bitmap;]
+      [126] astore v9
+      [128] aload_1 v1
+      [129] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [132] aload_1 v1
+      [133] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [136] getstatic #51
+        + Fieldref [android/graphics/Bitmap$Config.ARGB_8888 Landroid/graphics/Bitmap$Config;]
+      [139] invokestatic #77
+        + Methodref [android/graphics/Bitmap.createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
+      [142] astore v10
+      [144] new #31
+        + Class [android/graphics/Canvas]
+      [147] dup
+      [148] aload v10
+      [150] invokespecial #81
+        + Methodref [android/graphics/Canvas.<init> (Landroid/graphics/Bitmap;)V]
+      [153] astore v11
+      [155] new #32
+        + Class [android/graphics/Paint]
+      [158] dup
+      [159] invokespecial #86
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [162] dup
+      [163] astore v12
+      [165] iconst_1
+      [166] invokevirtual #88
+        + Methodref [android/graphics/Paint.setDither (Z)V]
+      [169] aload v12
+      [171] iconst_1
+      [172] invokevirtual #89
+        + Methodref [android/graphics/Paint.setFilterBitmap (Z)V]
+      [175] new #35
+        + Class [android/graphics/Rect]
+      [178] dup
+      [179] iconst_0
+      [180] iconst_0
+      [181] aload v5
+      [183] invokevirtual #79
+        + Methodref [android/graphics/Bitmap.getWidth ()I]
+      [186] aload v5
+      [188] invokevirtual #78
+        + Methodref [android/graphics/Bitmap.getHeight ()I]
+      [191] invokespecial #92
+        + Methodref [android/graphics/Rect.<init> (IIII)V]
+      [194] astore v13
+      [196] new #35
+        + Class [android/graphics/Rect]
+      [199] dup
+      [200] iconst_0
+      [201] iconst_0
+      [202] aload_1 v1
+      [203] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [206] aload_1 v1
+      [207] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [210] invokespecial #92
+        + Methodref [android/graphics/Rect.<init> (IIII)V]
+      [213] astore v14
+      [215] aload v11
+      [217] aload v5
+      [219] aload v13
+      [221] aload v14
+      [223] aload v12
+      [225] invokevirtual #82
+        + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+      [228] aload_1 v1
+      [229] aload v11
+      [231] aload v14
+      [233] astore v16
+      [235] astore v15
+      [237] astore v5
+      [239] new #32
+        + Class [android/graphics/Paint]
+      [242] dup
+      [243] invokespecial #86
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [246] dup
+      [247] astore v17
+      [249] aload v5
+      [251] getfield #64
+        + Fieldref [com/antsapps/directnavshortcut/a.g I]
+      [254] invokevirtual #87
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [257] aload v17
+      [259] getstatic #55
+        + Fieldref [android/graphics/Paint$Style.STROKE Landroid/graphics/Paint$Style;]
+      [262] invokevirtual #91
+        + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+      [265] aload v17
+      [267] aload v5
+      [269] getfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [272] iconst_2
+      [273] imul
+      [274] i2f
+      [275] invokevirtual #90
+        + Methodref [android/graphics/Paint.setStrokeWidth (F)V]
+      [278] aload v15
+      [280] aload v16
+      [282] aload v17
+      [284] invokevirtual #83
+        + Methodref [android/graphics/Canvas.drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+      [287] aload v4
+      [289] iload v7
+      [291] aload_3 v3
+      [292] invokestatic #97
+        + Methodref [android/provider/ContactsContract$CommonDataKinds$StructuredPostal.getTypeLabel (Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;]
+      [295] dup
+      [296] astore_3 v3
+      [297] ifnull +239 (target=536)
+      [300] new #39
+        + Class [android/text/TextPaint]
+      [303] dup
+      [304] sipush 257
+      [307] invokespecial #98
+        + Methodref [android/text/TextPaint.<init> (I)V]
+      [310] dup
+      [311] astore v5
+      [313] aload v4
+      [315] ldc #9
+        + Integer [2130968578]
+      [317] invokevirtual #72
+        + Methodref [android/content/res/Resources.getDimension (I)F]
+      [320] invokevirtual #103
+        + Methodref [android/text/TextPaint.setTextSize (F)V]
+      [323] aload v5
+      [325] aload v4
+      [327] ldc #4
+        + Integer [2130903040]
+      [329] invokevirtual #71
+        + Methodref [android/content/res/Resources.getColor (I)I]
+      [332] invokevirtual #101
+        + Methodref [android/text/TextPaint.setColor (I)V]
+      [335] aload v5
+      [337] ldc #11
+        + Float [4.0]
+      [339] fconst_0
+      [340] fconst_2
+      [341] aload v4
+      [343] ldc #5
+        + Integer [2130903041]
+      [345] invokevirtual #71
+        + Methodref [android/content/res/Resources.getColor (I)I]
+      [348] invokevirtual #102
+        + Methodref [android/text/TextPaint.setShadowLayer (FFFI)V]
+      [351] aload v5
+      [353] invokevirtual #99
+        + Methodref [android/text/TextPaint.getFontMetricsInt ()Landroid/graphics/Paint$FontMetricsInt;]
+      [356] astore v7
+      [358] new #32
+        + Class [android/graphics/Paint]
+      [361] dup
+      [362] invokespecial #86
+        + Methodref [android/graphics/Paint.<init> ()V]
+      [365] dup
+      [366] astore v15
+      [368] aload_1 v1
+      [369] getfield #64
+        + Fieldref [com/antsapps/directnavshortcut/a.g I]
+      [372] invokevirtual #87
+        + Methodref [android/graphics/Paint.setColor (I)V]
+      [375] aload v15
+      [377] getstatic #54
+        + Fieldref [android/graphics/Paint$Style.FILL Landroid/graphics/Paint$Style;]
+      [380] invokevirtual #91
+        + Methodref [android/graphics/Paint.setStyle (Landroid/graphics/Paint$Style;)V]
+      [383] aload v4
+      [385] ldc #10
+        + Integer [2130968579]
+      [387] invokevirtual #73
+        + Methodref [android/content/res/Resources.getDimensionPixelOffset (I)I]
+      [390] istore v4
+      [392] aload v7
+      [394] getfield #53
+        + Fieldref [android/graphics/Paint$FontMetricsInt.descent I]
+      [397] aload v7
+      [399] getfield #52
+        + Fieldref [android/graphics/Paint$FontMetricsInt.ascent I]
+      [402] isub
+      [403] iload v4
+      [405] iconst_2
+      [406] imul
+      [407] iadd
+      [408] istore v16
+      [410] aload v14
+      [412] iconst_0
+      [413] aload_1 v1
+      [414] getfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [417] iadd
+      [418] aload_1 v1
+      [419] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [422] iload v16
+      [424] isub
+      [425] aload_1 v1
+      [426] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [429] aload_1 v1
+      [430] getfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [433] isub
+      [434] aload_1 v1
+      [435] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [438] aload_1 v1
+      [439] getfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [442] isub
+      [443] invokevirtual #94
+        + Methodref [android/graphics/Rect.set (IIII)V]
+      [446] aload v11
+      [448] aload v14
+      [450] aload v15
+      [452] invokevirtual #83
+        + Methodref [android/graphics/Canvas.drawRect (Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+      [455] aload_1 v1
+      [456] getfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [459] i2f
+      [460] fstore v15
+      [462] aload_3 v3
+      [463] aload v5
+      [465] aload_1 v1
+      [466] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [469] i2f
+      [470] fconst_2
+      [471] fload v15
+      [473] fmul
+      [474] fsub
+      [475] getstatic #56
+        + Fieldref [android/text/TextUtils$TruncateAt.END Landroid/text/TextUtils$TruncateAt;]
+      [478] invokestatic #104
+        + Methodref [android/text/TextUtils.ellipsize (Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;]
+      [481] astore_3 v3
+      [482] aload v5
+      [484] aload_3 v3
+      [485] iconst_0
+      [486] aload_3 v3
+      [487] invokeinterface #112
+        + InterfaceMethodref [java/lang/CharSequence.length ()I]
+      [492] invokevirtual #100
+        + Methodref [android/text/TextPaint.measureText (Ljava/lang/CharSequence;II)F]
+      [495] fstore v15
+      [497] aload v11
+      [499] aload_3 v3
+      [500] iconst_0
+      [501] aload_3 v3
+      [502] invokeinterface #112
+        + InterfaceMethodref [java/lang/CharSequence.length ()I]
+      [507] aload_1 v1
+      [508] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [511] i2f
+      [512] fload v15
+      [514] fsub
+      [515] fconst_2
+      [516] fdiv
+      [517] aload_1 v1
+      [518] getfield #62
+        + Fieldref [com/antsapps/directnavshortcut/a.e I]
+      [521] aload v7
+      [523] getfield #53
+        + Fieldref [android/graphics/Paint$FontMetricsInt.descent I]
+      [526] isub
+      [527] iload v4
+      [529] isub
+      [530] i2f
+      [531] aload v5
+      [533] invokevirtual #84
+        + Methodref [android/graphics/Canvas.drawText (Ljava/lang/CharSequence;IIFFLandroid/graphics/Paint;)V]
+      [536] aload v13
+      [538] iconst_0
+      [539] iconst_0
+      [540] aload v9
+      [542] invokevirtual #79
+        + Methodref [android/graphics/Bitmap.getWidth ()I]
+      [545] aload v9
+      [547] invokevirtual #78
+        + Methodref [android/graphics/Bitmap.getHeight ()I]
+      [550] invokevirtual #94
+        + Methodref [android/graphics/Rect.set (IIII)V]
+      [553] aload v10
+      [555] invokevirtual #79
+        + Methodref [android/graphics/Bitmap.getWidth ()I]
+      [558] istore v5
+      [560] aload v14
+      [562] iload v5
+      [564] ldc #13
+        + Float [20.0]
+      [566] fload v8
+      [568] fmul
+      [569] f2i
+      [570] isub
+      [571] iconst_m1
+      [572] iload v5
+      [574] ldc #12
+        + Float [19.0]
+      [576] fload v8
+      [578] fmul
+      [579] f2i
+      [580] invokevirtual #94
+        + Methodref [android/graphics/Rect.set (IIII)V]
+      [583] aload v14
+      [585] aload_1 v1
+      [586] getfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [589] ineg
+      [590] aload_1 v1
+      [591] getfield #63
+        + Fieldref [com/antsapps/directnavshortcut/a.f I]
+      [594] invokevirtual #93
+        + Methodref [android/graphics/Rect.offset (II)V]
+      [597] aload v11
+      [599] aload v9
+      [601] aload v13
+      [603] aload v14
+      [605] aload v12
+      [607] invokevirtual #82
+        + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+      [610] aload v11
+      [612] aconst_null
+      [613] invokevirtual #85
+        + Methodref [android/graphics/Canvas.setBitmap (Landroid/graphics/Bitmap;)V]
+      [616] aload v10
+      [618] astore_1 v1
+      [619] new #26
+        + Class [android/content/Intent]
+      [622] dup
+      [623] ldc #14
+        + String [android.intent.action.VIEW]
+      [625] aload_2 v2
+      [626] invokespecial #67
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+      [629] dup
+      [630] astore_2 v2
+      [631] ldc #1
+        + Integer [67108864]
+      [633] invokevirtual #70
+        + Methodref [android/content/Intent.setFlags (I)Landroid/content/Intent;]
+      [636] pop
+      [637] new #26
+        + Class [android/content/Intent]
+      [640] dup
+      [641] invokespecial #66
+        + Methodref [android/content/Intent.<init> ()V]
+      [644] dup
+      [645] astore_3 v3
+      [646] ldc #15
+        + String [android.intent.extra.shortcut.ICON]
+      [648] aload_1 v1
+      [649] invokevirtual #68
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+      [652] pop
+      [653] aload_3 v3
+      [654] ldc #16
+        + String [android.intent.extra.shortcut.INTENT]
+      [656] aload_2 v2
+      [657] invokevirtual #68
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;]
+      [660] pop
+      [661] aload_3 v3
+      [662] ldc #17
+        + String [android.intent.extra.shortcut.NAME]
+      [664] aload v6
+      [666] invokevirtual #69
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [669] pop
+      [670] aload_0 v0
+      [671] getfield #60
+        + Fieldref [com/antsapps/directnavshortcut/a.c Lcom/antsapps/directnavshortcut/c;]
+      [674] aload_3 v3
+      [675] invokeinterface #111
+        + InterfaceMethodref [com/antsapps/directnavshortcut/c.a (Landroid/content/Intent;)V]
+      [680] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/antsapps/directnavshortcut/b
+  Superclass:    android/os/AsyncTask
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.antsapps.directnavshortcut.b extends android.os.AsyncTask
+
+Interfaces (count = 0):
+
+Constant Pool (count = 111):
+  + String [_id=?]
+  + Class [android/content/ContentResolver]
+  + Class [android/content/Context]
+  + Class [android/database/Cursor]
+  + Class [android/os/AsyncTask]
+  + Class [android/provider/ContactsContract$Data]
+  + Class [com/antsapps/directnavshortcut/a]
+  + Class [com/antsapps/directnavshortcut/b]
+  + Class [java/lang/String]
+  + Fieldref [android/provider/ContactsContract$Data.CONTENT_URI Landroid/net/Uri;]
+  + Fieldref [com/antsapps/directnavshortcut/b.a Landroid/net/Uri;]
+  + Fieldref [com/antsapps/directnavshortcut/b.b Ljava/lang/String;]
+  + Fieldref [com/antsapps/directnavshortcut/b.c [B]
+  + Fieldref [com/antsapps/directnavshortcut/b.d J]
+  + Fieldref [com/antsapps/directnavshortcut/b.e Lcom/antsapps/directnavshortcut/a;]
+  + Fieldref [com/antsapps/directnavshortcut/b.f Ljava/lang/String;]
+  + Fieldref [com/antsapps/directnavshortcut/b.g I]
+  + Fieldref [com/antsapps/directnavshortcut/b.h Ljava/lang/String;]
+  + Methodref [android/content/ContentResolver.query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+  + Methodref [android/content/Context.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [android/os/AsyncTask.<init> ()V]
+  + Methodref [com/antsapps/directnavshortcut/a.a ()[Ljava/lang/String;]
+  + Methodref [com/antsapps/directnavshortcut/a.a (Lcom/antsapps/directnavshortcut/a;)Landroid/content/Context;]
+  + Methodref [com/antsapps/directnavshortcut/a.a (Lcom/antsapps/directnavshortcut/a;Ljava/lang/String;[BLjava/lang/String;ILjava/lang/String;)V]
+  + Methodref [com/antsapps/directnavshortcut/a.b ()[Ljava/lang/String;]
+  + Methodref [com/antsapps/directnavshortcut/b.a ()Ljava/lang/Void;]
+  + Methodref [java/lang/String.valueOf (J)Ljava/lang/String;]
+  + InterfaceMethodref [android/database/Cursor.close ()V]
+  + InterfaceMethodref [android/database/Cursor.getBlob (I)[B]
+  + InterfaceMethodref [android/database/Cursor.getInt (I)I]
+  + InterfaceMethodref [android/database/Cursor.getLong (I)J]
+  + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
+  + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
+  + NameAndType [<init> ()V]
+  + NameAndType [CONTENT_URI Landroid/net/Uri;]
+  + NameAndType [a ()Ljava/lang/Void;]
+  + NameAndType [a ()[Ljava/lang/String;]
+  + NameAndType [a (Lcom/antsapps/directnavshortcut/a;)Landroid/content/Context;]
+  + NameAndType [a (Lcom/antsapps/directnavshortcut/a;Ljava/lang/String;[BLjava/lang/String;ILjava/lang/String;)V]
+  + NameAndType [a Landroid/net/Uri;]
+  + NameAndType [b ()[Ljava/lang/String;]
+  + NameAndType [b Ljava/lang/String;]
+  + NameAndType [c [B]
+  + NameAndType [close ()V]
+  + NameAndType [d J]
+  + NameAndType [e Lcom/antsapps/directnavshortcut/a;]
+  + NameAndType [f Ljava/lang/String;]
+  + NameAndType [g I]
+  + NameAndType [getBlob (I)[B]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getInt (I)I]
+  + NameAndType [getLong (I)J]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [h Ljava/lang/String;]
+  + NameAndType [moveToFirst ()Z]
+  + NameAndType [query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+  + NameAndType [valueOf (J)Ljava/lang/String;]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Ljava/lang/Void;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [()[Ljava/lang/String;]
+  + Utf8 [(I)I]
+  + Utf8 [(I)J]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)[B]
+  + Utf8 [(J)Ljava/lang/String;]
+  + Utf8 [(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+  + Utf8 [(Lcom/antsapps/directnavshortcut/a;)Landroid/content/Context;]
+  + Utf8 [(Lcom/antsapps/directnavshortcut/a;Landroid/net/Uri;)V]
+  + Utf8 [(Lcom/antsapps/directnavshortcut/a;Ljava/lang/String;[BLjava/lang/String;ILjava/lang/String;)V]
+  + Utf8 [(Ljava/lang/Object;)V]
+  + Utf8 [([Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [<init>]
+  + Utf8 [CONTENT_URI]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [J]
+  + Utf8 [Landroid/net/Uri;]
+  + Utf8 [Lcom/antsapps/directnavshortcut/a;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [[B]
+  + Utf8 [_id=?]
+  + Utf8 [a]
+  + Utf8 [android/content/ContentResolver]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/database/Cursor]
+  + Utf8 [android/os/AsyncTask]
+  + Utf8 [android/provider/ContactsContract$Data]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [close]
+  + Utf8 [com/antsapps/directnavshortcut/a]
+  + Utf8 [com/antsapps/directnavshortcut/b]
+  + Utf8 [d]
+  + Utf8 [doInBackground]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [getBlob]
+  + Utf8 [getContentResolver]
+  + Utf8 [getInt]
+  + Utf8 [getLong]
+  + Utf8 [getString]
+  + Utf8 [h]
+  + Utf8 [java/lang/String]
+  + Utf8 [moveToFirst]
+  + Utf8 [onPostExecute]
+  + Utf8 [query]
+  + Utf8 [valueOf]
+
+Fields (count = 8):
+  + Field:        a Landroid/net/Uri;
+    Access flags: 0x4
+      = protected android.net.Uri a
+  + Field:        b Ljava/lang/String;
+    Access flags: 0x4
+      = protected java.lang.String b
+  + Field:        c [B
+    Access flags: 0x4
+      = protected byte[] c
+  + Field:        d J
+    Access flags: 0x4
+      = protected long d
+  + Field:        f Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String f
+  + Field:        g I
+    Access flags: 0x2
+      = private int g
+  + Field:        h Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String h
+  + Field:        e Lcom/antsapps/directnavshortcut/a;
+    Access flags: 0x1010
+      = final synthetic com.antsapps.directnavshortcut.a e
+
+Methods (count = 4):
+  - Method:       <init>(Lcom/antsapps/directnavshortcut/a;Landroid/net/Uri;)V
+    Access flags: 0x1
+      = public b(com.antsapps.directnavshortcut.a,android.net.Uri)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #15
+        + Fieldref [com/antsapps/directnavshortcut/b.e Lcom/antsapps/directnavshortcut/a;]
+      [5] aload_0 v0
+      [6] invokespecial #21
+        + Methodref [android/os/AsyncTask.<init> ()V]
+      [9] aload_0 v0
+      [10] aload_2 v2
+      [11] putfield #11
+        + Fieldref [com/antsapps/directnavshortcut/b.a Landroid/net/Uri;]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/lang/Void;
+    Access flags: 0x82
+      = private varargs java.lang.Void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 204, locals = 3, stack = 9):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_1 v1
+      [3] getfield #15
+        + Fieldref [com/antsapps/directnavshortcut/b.e Lcom/antsapps/directnavshortcut/a;]
+      [6] invokestatic #23
+        + Methodref [com/antsapps/directnavshortcut/a.a (Lcom/antsapps/directnavshortcut/a;)Landroid/content/Context;]
+      [9] invokevirtual #20
+        + Methodref [android/content/Context.getContentResolver ()Landroid/content/ContentResolver;]
+      [12] aload_1 v1
+      [13] getfield #11
+        + Fieldref [com/antsapps/directnavshortcut/b.a Landroid/net/Uri;]
+      [16] invokestatic #22
+        + Methodref [com/antsapps/directnavshortcut/a.a ()[Ljava/lang/String;]
+      [19] aconst_null
+      [20] aconst_null
+      [21] aconst_null
+      [22] invokevirtual #19
+        + Methodref [android/content/ContentResolver.query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+      [25] dup
+      [26] astore_2 v2
+      [27] ifnull +85 (target=112)
+      [30] aload_2 v2
+      [31] invokeinterface #33
+        + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
+      [36] ifeq +70 (target=106)
+      [39] aload_1 v1
+      [40] aload_2 v2
+      [41] iconst_0
+      [42] invokeinterface #32
+        + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
+      [47] putfield #12
+        + Fieldref [com/antsapps/directnavshortcut/b.b Ljava/lang/String;]
+      [50] aload_1 v1
+      [51] aload_2 v2
+      [52] iconst_1
+      [53] invokeinterface #31
+        + InterfaceMethodref [android/database/Cursor.getLong (I)J]
+      [58] putfield #14
+        + Fieldref [com/antsapps/directnavshortcut/b.d J]
+      [61] aload_1 v1
+      [62] aload_2 v2
+      [63] iconst_2
+      [64] invokeinterface #32
+        + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
+      [69] putfield #16
+        + Fieldref [com/antsapps/directnavshortcut/b.f Ljava/lang/String;]
+      [72] aload_1 v1
+      [73] aload_2 v2
+      [74] iconst_3
+      [75] invokeinterface #30
+        + InterfaceMethodref [android/database/Cursor.getInt (I)I]
+      [80] putfield #17
+        + Fieldref [com/antsapps/directnavshortcut/b.g I]
+      [83] aload_1 v1
+      [84] aload_2 v2
+      [85] iconst_4
+      [86] invokeinterface #32
+        + InterfaceMethodref [android/database/Cursor.getString (I)Ljava/lang/String;]
+      [91] putfield #18
+        + Fieldref [com/antsapps/directnavshortcut/b.h Ljava/lang/String;]
+      [94] goto +12 (target=106)
+      [97] astore_1 v1
+      [98] aload_2 v2
+      [99] invokeinterface #28
+        + InterfaceMethodref [android/database/Cursor.close ()V]
+      [104] aload_1 v1
+      [105] athrow
+      [106] aload_2 v2
+      [107] invokeinterface #28
+        + InterfaceMethodref [android/database/Cursor.close ()V]
+      [112] aload_0 v0
+      [113] dup
+      [114] astore_1 v1
+      [115] getfield #14
+        + Fieldref [com/antsapps/directnavshortcut/b.d J]
+      [118] lconst_0
+      [119] lcmp
+      [120] ifeq +82 (target=202)
+      [123] aload_1 v1
+      [124] getfield #15
+        + Fieldref [com/antsapps/directnavshortcut/b.e Lcom/antsapps/directnavshortcut/a;]
+      [127] invokestatic #23
+        + Methodref [com/antsapps/directnavshortcut/a.a (Lcom/antsapps/directnavshortcut/a;)Landroid/content/Context;]
+      [130] invokevirtual #20
+        + Methodref [android/content/Context.getContentResolver ()Landroid/content/ContentResolver;]
+      [133] getstatic #10
+        + Fieldref [android/provider/ContactsContract$Data.CONTENT_URI Landroid/net/Uri;]
+      [136] invokestatic #25
+        + Methodref [com/antsapps/directnavshortcut/a.b ()[Ljava/lang/String;]
+      [139] ldc #1
+        + String [_id=?]
+      [141] iconst_1
+      [142] anewarray #9
+        + Class [java/lang/String]
+      [145] dup
+      [146] iconst_0
+      [147] aload_1 v1
+      [148] getfield #14
+        + Fieldref [com/antsapps/directnavshortcut/b.d J]
+      [151] invokestatic #27
+        + Methodref [java/lang/String.valueOf (J)Ljava/lang/String;]
+      [154] aastore
+      [155] aconst_null
+      [156] invokevirtual #19
+        + Methodref [android/content/ContentResolver.query (Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;]
+      [159] dup
+      [160] astore_2 v2
+      [161] ifnull +41 (target=202)
+      [164] aload_2 v2
+      [165] invokeinterface #33
+        + InterfaceMethodref [android/database/Cursor.moveToFirst ()Z]
+      [170] ifeq +26 (target=196)
+      [173] aload_1 v1
+      [174] aload_2 v2
+      [175] iconst_0
+      [176] invokeinterface #29
+        + InterfaceMethodref [android/database/Cursor.getBlob (I)[B]
+      [181] putfield #13
+        + Fieldref [com/antsapps/directnavshortcut/b.c [B]
+      [184] goto +12 (target=196)
+      [187] astore_1 v1
+      [188] aload_2 v2
+      [189] invokeinterface #28
+        + InterfaceMethodref [android/database/Cursor.close ()V]
+      [194] aload_1 v1
+      [195] athrow
+      [196] aload_2 v2
+      [197] invokeinterface #28
+        + InterfaceMethodref [android/database/Cursor.close ()V]
+      [202] aconst_null
+      [203] areturn
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (30 -> 97: 97):
+      - ExceptionInfo (164 -> 187: 187):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPostExecute(Ljava/lang/Object;)V
+    Access flags: 0x1014
+      = protected final synthetic void onPostExecute(java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 35, locals = 2, stack = 6):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_1 v1
+      [3] getfield #15
+        + Fieldref [com/antsapps/directnavshortcut/b.e Lcom/antsapps/directnavshortcut/a;]
+      [6] aload_1 v1
+      [7] getfield #11
+        + Fieldref [com/antsapps/directnavshortcut/b.a Landroid/net/Uri;]
+      [10] pop
+      [11] aload_1 v1
+      [12] getfield #12
+        + Fieldref [com/antsapps/directnavshortcut/b.b Ljava/lang/String;]
+      [15] aload_1 v1
+      [16] getfield #13
+        + Fieldref [com/antsapps/directnavshortcut/b.c [B]
+      [19] aload_1 v1
+      [20] getfield #16
+        + Fieldref [com/antsapps/directnavshortcut/b.f Ljava/lang/String;]
+      [23] aload_1 v1
+      [24] getfield #17
+        + Fieldref [com/antsapps/directnavshortcut/b.g I]
+      [27] aload_1 v1
+      [28] getfield #18
+        + Fieldref [com/antsapps/directnavshortcut/b.h Ljava/lang/String;]
+      [31] invokestatic #24
+        + Methodref [com/antsapps/directnavshortcut/a.a (Lcom/antsapps/directnavshortcut/a;Ljava/lang/String;[BLjava/lang/String;ILjava/lang/String;)V]
+      [34] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x1094
+      = protected final varargs synthetic java.lang.Object doInBackground(java.lang.Object[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 2, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #26
+        + Methodref [com/antsapps/directnavshortcut/b.a ()Ljava/lang/Void;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/antsapps/directnavshortcut/c
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x601
+    = public interface com.antsapps.directnavshortcut.c extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 7):
+  + Class [com/antsapps/directnavshortcut/c]
+  + Class [java/lang/Object]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [a]
+  + Utf8 [com/antsapps/directnavshortcut/c]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  + Method:       a(Landroid/content/Intent;)V
+    Access flags: 0x401
+      = public abstract void a(android.content.Intent)
+
+Class file attributes (count = 0):
+
