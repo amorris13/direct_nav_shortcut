@@ -1,2 +1,0 @@
-com.antsapps.directnavshortcut.CreateShortcutActivity
-com.antsapps.directnavshortcut.CreateShortcutActivity: CreateShortcutActivity()
