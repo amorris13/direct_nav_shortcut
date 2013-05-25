@@ -1,0 +1,6 @@
+Add a shortcut to directly navigate to your friends' places!
+Allows you to add a shortcut on your home screen to directly open navigation with one of your contact's addresses.
+- very simple
+- designed just like the built in direct dial and direct message shortcuts
+- tiny download
+Especially useful for car home screens.
