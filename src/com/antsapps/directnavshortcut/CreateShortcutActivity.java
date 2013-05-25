@@ -33,7 +33,11 @@ public class CreateShortcutActivity extends Activity implements
         Uri contactUri = data.getData();
         new ShortcutIntentBuilder(this, this)
             .createNavigationShortcutIntent(contactUri);
+      } else {
+        finish();
       }
+    } else {
+      finish();
     }
   }
 
